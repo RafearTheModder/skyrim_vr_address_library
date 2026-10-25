@@ -120,6 +120,7 @@ id,sse,vr,status,name
 15212,0x1401b6af0,0x1401c6b00,3,"ulonglong GrassManager::FUN_1401b6af0 (GrassManager* a_this, int * param_2)"
 15214,0x1401b7640,0x1401c7750,4,"NiAVObject__VFTable * GrassManager::sub_1401B7640 (GrassManager * a_this, undefined param_2, undefined param_3, undefined param_4, undefined8 param_5, undefined8 param_6)"
 15220,0x1401b81d0,0x1401c82e0,4,"bool FUN_1401b81d0 (longlong param_1, undefined8 param_2, undefined4 param_3, undefined4 * param_4, NiAVObject * * param_5, NiAVObject * * param_6)"
+15259,0x1401b9ae0,0x1401c9bf0,3,"BSResource::ErrorCode BSModelDB::LoadEntry(void* a_entryDB, const char* a_name, void* a_entry, void* a_entryOut, const DBTraits::ArgsType& a_args)"
 15491,0x1401c60a0,0x1401d6200,3,RE::BipedAnim::Dtor
 15494,0x1401c61a0,0x1401d6530,3,RE::BipedAnim::RemoveAllParts
 15495,0x1401c6270,0x1401d6600,3,FEC::UpdateCollision::RemoveNodeFromScene
@@ -1095,8 +1096,9 @@ id,sse,vr,status,name
 70882,0x140cc7cb0,0x140d0e800,4,"bool NiControllerSequence::Activate(std::uint8_t a_interpIndex, bool a_maxOffset, float a_seqWeight, float a_easeInTime, NiControllerSequence* a_partnerSequence, bool a_transition)"
 72799,0x140d03330,0x140d49ec0,4,void NiParticleSystem::AddModifier(NiPSysModifier* a_modifier)
 73882,0x140d28c40,0x140d70310,3,"Setting * SettingT<T1>::SetStringValue_140D28C40 (Setting * a_this, char * a_string)"
-74031,0x140d2e880,0x140d76c40,3,"void BSModelDB::ParseModel(BSTSmartPointer<BSResource::Stream>* a_stream, std::uint64_t a_unk, const DBTraits::ArgsType& a_args, NiPointer<NiNode>& a_modelOut, void* a_userData)"
+74031,0x140d2e880,0x140d76c40,3,"void BSModelDB::ParseModel(BSTSmartPointer<BSResource::Stream>* a_stream, const char* a_modelName, const DBTraits::ArgsType& a_args, NiPointer<NiNode>& a_modelOut, std::uint32_t& a_typeOut)"
 74040,0x140d2f220,0x140d775e0,4,"BSResource::ErrorCode BSModelDB::Demand(const char* a_modelPath, NiPointer<NiNode>& a_modelOut, const DBTraits::ArgsType& a_args)"
+74078,0x140d30c50,0x140d79010,3,"BSResource::ErrorCode BSModelDB::LoadByName(void* a_entryDB, const char* a_path, void* a_entryOut, bool a_unk, const DBTraits::ArgsType& a_args)"
 74236,0x140d38120,0x140d805b0,3,RE::INISettingCollection::WriteSetting
 74237,0x140d38310,0x14053c550,3,RE::INISettingCollection::ReadSetting
 74239,0x140d38710,0x140d80bb0,3,RE::INISettingCollection::OpenHandle
